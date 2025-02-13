@@ -1,0 +1,686 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+/* @media (min-width: 1024px) {  */
+
+body {
+    font-family: Roboto, Arial;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: #0f172a;
+    background-image: linear-gradient(45deg,
+            rgba(59, 130, 246, 0.08) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(59, 130, 246, 0.08) 75%),
+        linear-gradient(-45deg,
+            rgba(59, 130, 246, 0.08) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(59, 130, 246, 0.08) 75%),
+        linear-gradient(45deg,
+            transparent 40%,
+            rgba(99, 102, 241, 0.1) 40%,
+            rgba(99, 102, 241, 0.1) 60%,
+            transparent 60%),
+        linear-gradient(-45deg,
+            transparent 40%,
+            rgba(99, 102, 241, 0.1) 40%,
+            rgba(99, 102, 241, 0.1) 60%,
+            transparent 60%),
+        radial-gradient(circle at 50% 50%, #000000 0%, #000000 100%);
+    background-size:
+        60px 60px,
+        60px 60px,
+        120px 120px,
+        120px 120px,
+        100% 100%;
+    background-position:
+        0 0,
+        30px 30px,
+        0 0,
+        60px 60px,
+        0 0;
+    /*position: relative;*/
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.03) 0px,
+            rgba(255, 255, 255, 0.03) 1px,
+            transparent 1px,
+            transparent 10px),
+        repeating-linear-gradient(-45deg,
+            rgba(255, 255, 255, 0.03) 0px,
+            rgba(255, 255, 255, 0.03) 1px,
+            transparent 1px,
+            transparent 10px);
+    background-size: 20px 20px;
+    filter: blur(0.5px);
+}
+
+/*universe io code ends*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+     overflow-x: hidden; 
+    scroll-behavior: smooth;
+}
+
+/*nav elements */
+nav {
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #0c1927;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+header nav span {
+    font-size: 3rem;
+    color: rgb(227, 33, 33);
+}
+
+header nav .left img {
+    width: 20%;
+    margin: -20px -40px;
+}
+
+header nav .left div {
+    font-size: 1.6rem;
+    margin: -30px 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 3s ease, left 3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(4, 247, 255);
+    font-size: 2rem;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/*nav elements ends*/
+/*hr styling*/
+main hr {
+    border: 0;
+    background: #00a2ff;
+    height: 1.2px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 90%;
+    justify-self: center;
+}
+#home{
+    display: flex;
+    align-items: center;
+}
+/*First section's left block*/
+.leftSection {
+    font-size: 3.5rem;
+    width: 50%;
+    margin: 130px 50px;
+    color: #ffffff;
+}
+.text1{
+    width: fit-content;
+}
+
+.btn4 {
+    background-color: #4CAF50; 
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer; 
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: relative;
+    z-index: 10;
+}
+.btn4:hover {
+    background-color: #45a049; 
+}
+
+/*first section right block*/
+.rightSection {
+    width: 50%;
+    margin: 130px 55px;
+}
+
+.rightSection img {
+    width: 500px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, red, blue);
+    border: 5px solid #2a3a52;
+}
+
+.purple {
+    color: rgb(101, 98, 205);
+}
+
+.text-gray {
+    color: rgb(255, 255, 255);
+}
+
+#element {
+    color: rgb(0 201 201);
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+/*first section ends here*/
+/*Second section starts*/
+.secondSection {
+    width: fit-content;
+    margin: 0px 55px;
+    color: #fefefe;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.secondSection .box-skills {
+    width: 110%;
+    height: 60vh;
+    padding: 10px;
+    border: 5px solid greenyellow;
+    margin: 65px 0px;
+}
+
+.secondSection img {
+    display: flex;
+    width: 65px;
+    border-radius: 25%;
+    /* position: relative;
+        top: -30px;
+        left: 120px;*/
+}
+
+.secondSection ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px 10px;
+    list-style: none;
+    width: fit-content;
+}
+
+.secondSection ul h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(77, 116, 223);
+}
+
+.secondSection ul li p span {
+    color: aquamarine;
+}
+
+.secondSection ul li p {
+    font-size: 1rem;
+    width: fit-content;
+}
+
+.secondSection ul li {
+    width: fit-content;
+}
+
+/*second section ends*/
+/*third section starts*/
+.thirdSection {
+    width: 80vw;
+    margin: auto;
+    color: #fefefe;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#about span {
+    display: flex;
+    align-items: flex-start;
+    font-size: 2.5rem;
+    font-weight: 1000;
+}
+
+.span1 {
+    font-size: 2rem;
+    color: rgb(255 43 136);
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-titles span {
+    color: aqua;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 35px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 50px 25px;
+    text-align: justify;
+}
+
+.tab-contents ul li img {
+    width: 50px;
+    margin: -10px 10px;
+}
+
+.tab-contents ul li span {
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+    padding: 10px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*third section ends*/
+/*fourthSection starts here */
+.fourthSection {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+
+    background: rgb(4, 26, 31);
+    transition: all 0.4s;
+    border-radius: 25%;
+    box-shadow: 0px 0px 10px 5px greenyellow;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.card:hover {
+    border-radius: 25%;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(235, 87, 87, 0.705);
+    background: rgb(0, 0, 0);
+}
+
+.first-content {
+    height: 95%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 25%;
+    font-size: 1rem;
+}
+
+.card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+}
+
+.second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+}
+
+.card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1rem;
+    transform: rotate(0deg);
+}
+
+.fourthSection img {
+    width: 85px;
+    border-radius: 25%;
+}
+
+.first-content span {
+    color: lightskyblue;
+    font-size: 1.4rem;
+}
+
+.second-content p {
+    /* font-size: 1.2rem; */
+    text-align: center;
+    margin: 20px 50px;
+}
+.fourthSection-S {
+    margin: 10px 60px;
+}
+/*fourthSection ends*/
+/*fifthSection starts*/
+/* From Uiverse.io by Bastiennnn */
+
+.fifthSection .span5 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 100px;
+}
+.item-card {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.card1 {
+    width: 350px;
+    height: 450px;
+    margin: 0 auto;
+    background-color: #000000;
+    border-radius: 60px;
+    z-index: 1;
+    box-shadow: 0px 10px 60px aqua;
+    transition: 1.5s;
+    cursor: pointer;
+}
+.card1:hover {
+    transform: translateY(20px);
+    box-shadow: 0px 10px 60px lightgreen;
+    border-radius: 20%;
+    background-color: #000000;
+}
+.top1 {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.header1 {
+    margin: 5px;
+    margin-top: 5px;
+    border-radius: 30px;
+}
+#title2 {
+    color: crimson;
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 30px;
+}
+.code-container {
+    text-align: center;
+}
+#code {
+    margin-top: 10px;
+    width: 300px;
+    height: 315px;
+    resize: none;
+    background-color: #000000;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#code:hover {
+    background-color: rgb(13, 44, 137);
+}
+
+#code:focus {
+    outline: none !important;
+}
+
+
+/*fifthSection ends*/
+
+/*SixthSection starts */
+.sixthSection{
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+}
+.row {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.contact-left {
+    margin: 0 20px;
+    border: 4px solid whitesmoke;
+    border-radius: 60px;
+    padding: 40px;
+    box-shadow: 0px 10px 60px rgb(84, 144, 144);
+}
+.contact-right {
+    margin: 0 20px;
+    border: 4px solid whitesmoke;
+    border-radius: 60px;
+    padding: 40px;
+    box-shadow: 0px 10px 60px rgb(84, 144, 144);
+}
+
+.contact-left p {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.contact-left img {
+    width: 20px;
+    border-radius: 50%;
+}
+
+.social-icons {
+    margin-top: 35px;
+}
+
+.social-icons a img {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+    width: 50px;
+}
+
+.social-icons a img:hover {
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    padding: 12px;
+    background: #08080d;
+    color: aliceblue;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.btn.btn2:hover {
+    transform: translateY(-5px);
+    transition: 0.5s ease, 0.5s ease;
+    box-shadow: 0px 10px 20px #ff004f;
+}
+
+h4 {
+    font-size: 4rem;
+    color: #ff004f;
+}
+
+.contact-right form {
+    width: 90%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px rgb(151, 211, 211);
+}
+
+form .btn2 {
+    padding: 14px 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#msg {
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+}
+
+
+
+/*SixthSection ends*/
+/*Footer starts*/
+footer {
+    margin-top: 100px;
+    background-color: #0c1927;
+    position: relative;
+    bottom: 0px;
+}
+
+.footer {
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-evenly;
+
+}
+
+.footer ul {
+    list-style: none;
+    color: azure;
+    font-size: 1.8rem;
+}
+
+.footer>div {
+    width: 230px;
+    font-size: 2rem;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+.footer-second ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+div .footer-third ul li {
+    font-size: 1.8rem;
+    display: inline;
+    padding: 10px;
+}
+
+footer .footer-third ul img {
+    width: 50px;
+}
+
+footer .footer .footer-third img:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    border: 2px solid rgb(243, 84, 84);
+    box-shadow: -2.5px -2.5px 20px 5px rgb(243, 84, 84);
+    border-radius: 40%;
+}
+
+/*Footer ends*/
